@@ -10,7 +10,7 @@ public class TamGiac {
         cv=ChuVi(a,b,c);
         s=DienTich(a,b,c);
         System.out.println("Chu vi hinh tam giac: "+cv);
-        System.out.println("Dien tich hinh tam giac: "=s);
+        System.out.println("Dien tich hinh tam giac: "+s);
     }
     public static int NhapSoNguyen(String str){
         int x;
