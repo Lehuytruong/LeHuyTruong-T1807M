@@ -49,10 +49,6 @@ public class Main {
             showMenu();
         }
     }
-
-    /**
-     * create menu
-     */
     public static void showMenu() {
         System.out.println("-----------menu------------");
         System.out.println("1. Add student.");
