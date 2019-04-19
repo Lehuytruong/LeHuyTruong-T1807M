@@ -1,65 +1,46 @@
-package Assignment07;
-import java.util.Scanner;
+package JV2_Session06;
+//buoc 1: import packet
+import java.sql.*;
+
+import static java.lang.String.*;
+
 public class Main {
-    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String args[]){
+        try {
+            //Buoc 2: dang ky driver -- nap driver nao neu chua co
+            Class.forName("com.mysql.jdbc.Driver");
 
-    public static void main(String[] args) {
-        String choose = null;
-        boolean exit = false;
-        StudentManager studentManager = new StudentManager();
-        int studentId;
+            //Buoc3: tao ket noi DB
 
-        // show menu
-        showMenu();
-        while (true) {
-            choose = scanner.nextLine();
-            switch (choose) {
-                case "1":
-                    studentManager.add();
-                    break;
-                case "2":
-                    studentId = studentManager.inputId();
-                    studentManager.edit(studentId);
-                    break;
-                case "3":
-                    studentId = studentManager.inputId();
-                    studentManager.delete(studentId);
-                    break;
-                case "4":
-                    studentManager.StudentByGPA();
-                    break;
-                case "5":
-                    studentManager.StudentByName();
-                    break;
-                case "6":
-                    studentManager.show();
-                    break;
-                case "0":
-                    System.out.println("exited!");
-                    exit = true;
-                    break;
-                default:
-                    System.out.println("invalid! please choose action in below menu:");
-                    break;
+            String URL = "jdbc:mysql://localhost:3306/t1807m";
+            Connection conn = DriverManager.getConnection(URL,"t1807m","11121992Khon");
+            //Buoc 4: truy van du lieu
+            Statement statement = conn.createStatement();
+            // them du lieu
+            String insert_sql = "INSERT INTO Student (Name,Age,Mark) VALUE('Le Van A',20,6)";
+            statement.executeUpdate(insert_sql);
+            //sua du lieu
+            String edit_sql = "UPDATE Student SET Name ='Nguyen Nhu Ly'"+ "where ID = 1";
+            statement.executeUpdate(edit_sql);
+            //xoa du lieu
+            String delete_sql = "DELETE FROM Student where ID = 6";
+            statement.executeUpdate(delete_sql);
+
+
+            String sql = "SELECT * FROM Student";
+
+            ResultSet rs = statement.executeQuery(sql);
+
+            while (rs.next()){
+                System.out.println("ID: "+rs.getInt("ID"));
+                System.out.println("Name: "+rs.getString("Name"));
+                System.out.println("Age: "+rs.getInt("Age"));
+                System.out.println("Mark: "+rs.getInt("Mark"));
+                System.out.println("------------------------------------");
             }
-            if (exit) {
-                break;
-            }
-            // show menu
-            showMenu();
+            //END
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
-    public static void showMenu() {
-        System.out.println("-----------menu------------");
-        System.out.println("1. Add student.");
-        System.out.println("2. Edit student by id.");
-        System.out.println("3. Delete student by id.");
-        System.out.println("4. Sort student by gpa.");
-        System.out.println("5. Sort student by name.");
-        System.out.println("6. Show student.");
-        System.out.println("0. exit.");
-        System.out.println("---------------------------");
-        System.out.print("Please choose: ");
-    }
-
 }
