@@ -1,64 +1,42 @@
-package Assignment07;
+package Assignment02;
 
-import java.io.Serializable;
+public class Student <K,V,N>{
+    public K ID;
+    public V Name;
+    public N Age;
 
-public class Student implements Serializable {
-    int ID;
-    String Name;
-    byte Age;
-    String Address;
-    float Gpa;
-
-    public Student(){
-
-    }
-    public Student(int ID, String Name, byte Age, String Address, float Gpa){
-        super();
+    public Student(K ID, V name, N age) {
         this.ID = ID;
-        this.Name = Name;
-        this.Age = Age;
-        this.Address = Address;
-        this.Gpa = Gpa;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public byte getAge() {
-        return Age;
-    }
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public float getGpa() {
-        return Gpa;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public void setName(String name) {
         Name = name;
-    }
-
-    public void setAge(byte age) {
         Age = age;
     }
 
-    public void setAddress(String address) {
-        Address = address;
+    public K getID() {
+        return ID;
     }
 
-    public void setGpa(float gpa) {
-        Gpa = gpa;
+    public V getName() {
+        return Name;
+    }
+
+    public N getAge() {
+        return Age;
+    }
+
+    public void setID(K ID) {
+        this.ID = ID;
+    }
+
+    public void setName(V name) {
+        Name = name;
+    }
+
+    public void setAge(N age) {
+        Age = age;
+    }
+    public String toString() {
+        return "Student information:" + this.ID + "/n"
+                + this.Name + "/n"
+                + this.Age;
     }
 }
-
