@@ -1,42 +1,47 @@
-package Assignment02;
+package Example;
 
-public class Student <K,V,N>{
-    public K ID;
-    public V Name;
-    public N Age;
+public class Student {
+    String studentID;
+    String name;
+    String address;
+    String phone;
 
-    public Student(K ID, V name, N age) {
-        this.ID = ID;
-        Name = name;
-        Age = age;
+    public Student(String studentID, String name, String address, String phone) {
+        this.studentID = studentID;
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
     }
 
-    public K getID() {
-        return ID;
+    public String getStudentID() {
+        return studentID;
     }
 
-    public V getName() {
-        return Name;
+    public String getName() {
+        return name;
     }
 
-    public N getAge() {
-        return Age;
+    public String getAddress() {
+        return address;
     }
 
-    public void setID(K ID) {
-        this.ID = ID;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setName(V name) {
-        Name = name;
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
     }
 
-    public void setAge(N age) {
-        Age = age;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String toString() {
-        return "Student information:" + this.ID + "/n"
-                + this.Name + "/n"
-                + this.Age;
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
