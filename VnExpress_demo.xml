@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<face>
+		<hot_news>
+			<image>
+				https://i-kinhdoanh.vnecdn.net/2019/05/02/04786e24832b66753f3a-3335-1556761506_600x0.jpg
+			</image>
+			<title>
+				<title_link>
+					https://vnexpress.net/kinh-doanh/bo-tai-chinh-goi-y-giai-phap-khoi-thong-dong-von-3917096.html
+				</title_link>
+				<title_text>
+					Gần 200 người hiến kế thu hút dòng vốn trung - dài hạn cho nề kinh tế
+				</title_text>
+			</title>
+			<content>
+				Thị trường trái phiếu, quỹ hưu trí tự nguyện, quỹ phát triển bất động sản là 3 trọng tâm được bàn thảo trong phên hiến kế Vốn - tgaif chính cho nhền kinh tế sáng nay 2/5.
+			</content>
+		</hot_news>
+		<otherNews>
+			<itemName>
+				<itemName_link>
+					https://vief.vnexpress.net/
+				<itemName_link>
+				<itemName_text>
+					DIỄN ĐÀN KINH TẾ TƯ NHÂN
+				<itemName_text>
+			</itemName>
+			<news>
+				<news_link>
+					https://vnexpress.net/bong-da/messi-thua-nhan-an-may-voi-cu-sut-phat-vao-luoi-liverpool-3917202.html
+				</news_link>
+				<news_text>
+					Messi thừa nhận 'ăn may' với cú sút phạt vào lưới Liverpool
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/oto-xe-may/gia-dinh-nen-chon-xe-nao-tam-gia-600-trieu-den-mot-ty-3917258.html
+				</news_link>
+				<news_text>
+					Gia đình nên chọn xe nào tầm giá 600 triệu đến một tỷ?
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/bong-da/barca-bat-kip-cot-moc-ghi-ban-cua-real-tai-champions-league-3917205.html
+				</news_link>
+				<news_text>
+					Barca bắt kịp cột mốc ghi bàn của Real tại Champions League
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/bong-da/ngoai-binh-khen-quang-hai-choi-dong-doi-3917278.html
+				</news_link>
+				<news_text>
+					Ngoại binh khen Quang Hải chơi đồng đội  
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/the-gioi/bieu-tinh-bao-luc-tiep-tuc-no-ra-o-venezuela-sau-cuoc-dao-chinh-that-bai-3917223.html
+				</news_link>
+				<news_text>
+					Biểu tình bạo lực tiếp tục nổ ra ở Venezuela sau cuộc đảo chính thất bại  
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/kinh-doanh/my-giu-nguyen-lai-suat-3917229.html
+				</news_link>
+				<news_text>
+					Mỹ giữ nguyên lãi suất  
+				</news_text>
+			</news>
+			<news>
+				<news_link>
+					https://vnexpress.net/bong-da/hlv-valverde-nhac-lai-tran-thua-roma-de-canh-tinh-barca-3917227.html
+				</news_link>
+				<news_text>
+					HLV Valverde nhắc lại trận thua Roma để cảnh tỉnh Barca 
+				</news_text>
+			</news>
+		</otherNews>
+	</face>
